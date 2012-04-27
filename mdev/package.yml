@@ -1,0 +1,12 @@
+Package: libexif
+Maintainer: Braden MacDonald <bmacdonald@mstar-ca.com>
+Mkbs: libexif.mkb
+Libraries: exif
+Description:
+ Library for reading EXIF metadata.
+Contents-Source:
+ - README.md
+ - libexif.mkb
+ - libexif.mkf
+Contents:
+ - config.h : config.h

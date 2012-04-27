@@ -1,0 +1,6 @@
+#!/usr/bin/env mkb
+target exif
+
+option lib
+
+subproject libexif

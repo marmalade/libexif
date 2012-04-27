@@ -1,0 +1,61 @@
+upstream
+{
+	url="http://iweb.dl.sourceforge.net/project/libexif/libexif/0.6.20/libexif-0.6.20.tar.gz"
+}
+
+version 0.6.20
+
+includepaths
+{
+	"upstream"
+    .
+}
+
+files
+{
+    config.h
+
+    ["Upstream"]
+    ("upstream/libexif")
+    exif-byte-order.c
+	exif-byte-order.h
+	exif-content.c
+	exif-content.h
+	exif-data.c
+	exif-data.h
+	exif-entry.c
+	exif-entry.h
+	exif-format.c
+	exif-format.h
+	exif-ifd.c
+	exif-ifd.h
+	exif-loader.c
+	exif-loader.h
+	exif-log.c
+	exif-log.h
+	exif-mem.c
+	exif-mem.h
+	exif-mnote-data.c
+	exif-mnote-data.h
+	exif-mnote-data-priv.h
+	exif-tag.c
+	exif-tag.h
+	exif-utils.c
+	exif-utils.h
+	_stdint.h
+	i18n.h
+	
+	["Upstream/Maker Notes"]
+	("upstream/libexif")
+	"canon/*.c"
+	"canon/*.h"
+	"pentax/*.c"
+	"pentax/*.h"
+	"fuji/*.c"
+	"fuji/*.h"
+	"olympus/*.c"
+	"olympus/*.h"
+}
+
+library ".,exif"
+
